@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Learning Bootstrap - Container</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div style="background-color: aquamarine;">
+        <h1>普通容器</h1>
+    </div>
+    <div class="container" style="background-color:violet;">
+        <h1>.container 附魔后的容器</h1>
+        <p>.container 类用于创建固定宽度的响应式页面</p>
+        <p>注意：宽度（max-width）会根据屏幕宽度同比例放大或缩小</p>
+        <img src="static/images/container-width.png" width="50%">
+    </div>
+    <div class="container-fluid bg-info">
+        <h1>.container-fluid 附魔后的容器</h1>
+        <p>.conatainer-fluid 用于创建一个全屏幕尺寸的容器，容器始终跨越整个屏幕宽度（width始终为100%）</p>
+    </div>
+    <hr>
+    <p>这两种容器的共同点是它们都将高度设置为auto，即自动模式。最大的不同就是宽度的设定上。</p>
+    <p>container 根据屏幕宽度根据媒体查询，已经设置了固定的宽度且始终居中，作为阶段性的改变宽度，所以在浏览器改变大小时，页面是随着浏览器的大小阶段变化的。</p>
+    <p>container-fluid则是将宽度设定为auto，所以当缩放浏览器时，他会保持浏览器全屏大小，始终保持100%宽度</p>
+    <hr>
+    <h1 style="background-color: coral;">响应式容器</h1>
+    <p>可以使用.container-sm|md|lg|xl|xxl类来创建响应式容器。</p>
+    <p>容器的max-width属性值会根据屏幕的大小来改变。</p>
+    <img src="static/images/container-size.png" alt="不同屏幕尺寸下的container大小设置" width="50%">
+    <div class="container-sm bg-black text-light">.container-sm</div>
+    <div class="container-md bg-info text-dark">.container-md</div>
+    <div class="container-lg bg-danger text-light">.container-lg</div>
+    <div class="container-xl bg-dark text-light">.container-xl</div>
+    <div class="container-xxl bg-primary text-light">.container-xxl</div>
+    <p>可以看到，对于某个给定的大小如container-sm，会对当前配置指定固定宽度，小于该配置的屏幕，宽度都显示为100%。</p>
+
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 网格系统</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Bootstrap5 网格系统</h1>
+    <p>Bootstrap的网格系统是响应式的，列会根据屏幕大小自动排列。请确保每一行列的总和不大于12。总共为12列而不是其它列数的原因是它是1，2，4，6的最小公倍数。</p>
+    <p>Bootstrap 5 网格系统有以下6个类：</p>
+    <ul>
+        <li>.col- 针对所有设备</li>
+        <li>.col-sm- 平板 - 屏幕宽度等于或大于576px</li>
+        <li>.col-md- 桌面显示器 - 屏幕宽度等于或大于768px</li>
+        <li>.col-lg- 大桌面显示器 - 屏幕宽度等于或大于992px</li>
+        <li>.col-xl- 特大桌面显示器 - 屏幕宽度等于或大于1200px</li>
+        <li>.col-xxl- 超大桌面显示器 - 屏幕宽度等于或大于1400px</li>
+    </ul>
+    <hr>
+    <h2>网格系统规则</h2>
+    <p>Bootstap5 网系统规则：</p>
+    <ul>
+        <li>网格每一行需要放置在设置了.container 或 .container-fluid类的容器中，这样就可以自动的设置一些外边距和内边距。</li>
+        <li>使用行来创建水平的列组。</li>
+        <li>内容要放置在列中，并且只有列可以是行的直接子节点。</li>
+        <li>预定义的类如.row和.col-sm-4可用于快速制作网格布局。</li>
+    </ul>
+    <div class="container">
+        <p>示例：针对所有设备，分成12列</p>
+        <div class="row bg-light">
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+        </div>
+        <hr>
+        <p>示例：针对所有设备，分成两列，数字代表所占格数。当屏幕尺寸变化时，列长度对等比例缩放，不会产生堆叠（除非极小到只能放下单个列）。</p>
+        <div class="row">
+            <div class="col-2" style="background-color: aliceblue;">2</div>
+            <div class="col-10" style="background-color: antiquewhite;">10</div>
+        </div>
+        <hr>
+        <p>示例：针对平板设备，把行分成3列。当设备小于576px时，3列会进行堆叠。</p>
+        <div class="row">
+            <div class="col-sm-4" style="background-color: beige;">4</div>
+            <div class="col-sm-4" style="background-color:bisque;">4</div>
+            <div class="col-sm-4" style="background-color:blue;">4</div>
+        </div>
+        <hr>
+        <p>示例：针对桌面显示器，把行分成3列。当设备小于768px时，3列会进行堆叠。</p>
+        <div class="row">
+            <div class="col-md-3" style="background-color: aqua;">3</div>
+            <div class="col-md-4" style="background-color: aquamarine;">4</div>
+            <div class="col-md-5" style="background-color: azure;">5</div>
+        </div>
+        <hr>
+        <h3>嵌套列</h3>
+        <h4>示例：列嵌套单行</h4>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="row">
+                    <div class="col-lg-6" style="background-color:beige;">3.6</div>
+                    <div class="col-lg-6" style="background-color:bisque;">3.6</div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-4" style="background-color:chartreuse;">9.4</div>
+                    <div class="col-lg-4" style="background-color:aqua;">9.4</div>
+                    <div class="col-lg-4" style="background-color:aquamarine;">9.4</div>
+                </div>
+            </div>
+        </div>
+        <h4>示例：列嵌套多行</h4>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="row">
+                    <div class="col-lg-6" style="background-color:beige;">3.6</div>
+                    <div class="col-lg-6" style="background-color:bisque;">3.6</div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-4" style="background-color:chartreuse;">9.4</div>
+                    <div class="col-lg-4" style="background-color:aqua;">9.4</div>
+                    <div class="col-lg-4" style="background-color:aquamarine;">9.4</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3" style="background-color:cyan;">9.3</div>
+                    <div class="col-lg-3" style="background-color:coral;">9.3</div>
+                    <div class="col-lg-3" style="background-color:violet;">9.3</div>
+                    <div class="col-lg-3" style="background-color:turquoise;">9.3</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h3>列偏移</h3>
+        <p>列偏移是通过类名 offset-*-* 来设置的。第一个星号是屏幕设备类型，可以是sm、md、lg、xl；第二个星号可以是1到11的数字。</p>
+        <div class="row">
+            <div class="col-md-4" style="background-color:cyan;">4</div>
+            <div class="col-md-4 offset-md-4" style="background-color:coral;">4</div>
+        </div>
+        <hr>
+        <h3>列顺序</h3>
+        <p>通过类 .order 来控制内容的可读顺序。这些类是响应式的，因此可以配合网格类使用。如.order-md-3</p>
+        <div class="row">
+            <div class="col-md-4" style="background-color:cyan;">1</div><!-- 因为没有设置顺序，因此排在第一 -->
+            <div class="col-md-4 order-3" style="background-color:coral;">2</div><!-- 因为顺序设置为3，所以排行内第三 -->
+            <div class="col-md-4 order-1" style="background-color:violet;">3</div><!-- 因为顺序设置为2，所以排行内第二 -->
+        </div>
+        <p>如果前面的列没有设置顺序，后面的即使设置为第一列，但仍然要排在未设置顺序的列后面</p>
+        <div class="row">
+            <div class="col-md-4" style="background-color:cyan;">1</div>
+            <div class="col-md-4" style="background-color:coral;">2</div>
+            <div class="col-md-4 order-1" style="background-color:violet;">1</div>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
