@@ -126,6 +126,30 @@
             <div class="col-md-4" style="background-color:coral;">2</div>
             <div class="col-md-4 order-1" style="background-color:violet;">1</div>
         </div>
+        <hr>
+        <p>order的范围为1-5，其它数字无效</p>
+        <div class="row">
+            <div class="col-md-4 order-1">1</div>
+            <div class="col-md-4 order-2">2</div>
+            <div class="col-md-4 order-3">3</div>
+            <div class="col-md-4 order-4">4</div>
+            <div class="col-md-4 order-5">5</div>
+            <div class="col-md-4 order-5">6</div>
+            <div class="col-md-4 order-6">7</div>
+            <div class="col-md-4">8</div>
+        </div>
+        <hr>
+        <p>order-first 和 order-last 优先于数字和不指定order的情况，会调整元素到首尾位置。除此之外，其余元素按照其指定的order或未指定order的规则设置。</p>
+        <div class="row">
+            <div class="col-md-4 order-1">1</div>
+            <div class="col-md-4 order-2">2</div>
+            <div class="col-md-4 order-first">3</div>
+            <div class="col-md-4 order-last">4</div>
+            <div class="col-md-4 order-5">5</div>
+            <div class="col-md-4 order-5">6</div>
+            <div class="col-md-4 order-6">7</div>
+            <div class="col-md-4">8</div>
+        </div>
     </div>
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
 </body>

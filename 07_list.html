@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 列表</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1>Bootstrap5 列表</h1>
+    <p>使用Bootstrap可以创建3中类型的HTML列表：</p>
+    <ul>
+        <li><b>无序列表</b> - 项目顺序无关紧要的列表。无需列表中的项目标有项目符号，如▪️等，ul>li </li>
+        <li><b>有序列表</b> - 项目顺序重要的列表。列表中的项目用数字表示，如1等，ol>li </li>
+        <li><b>自定义列表</b> - 术语列表及其描述。dl>dt</li>
+    </ul>
+    <h2 style="background-color: aquamarine;">无序列表</h2>
+    <ul>
+        <li>数学</li>
+        <li>语文</li>
+        <li>英语</li>
+    </ul>
+    <h2 style="background-color: aquamarine;">有序列表</h2>
+    <ol>
+        <li>打开冰箱门</li>
+        <li>把大象放进去</li>
+        <li>关上冰箱门</li>
+    </ol>
+    <h2 style="background-color: aquamarine;">无样式的有序列表和无序列表</h2>
+    <p>需要从列表中删除默认样式，可以通过简单地将类 .list-unstyle 应用到相应的 ul 或 ol 元素做到这一点。</p>
+    <h3>去点列表</h3>
+    <div style="background-color: aliceblue;">
+        <ul class="list-unstyled">
+            <li>数学</li>
+            <li>语文</li>
+            <li>英语</li>
+        </ul>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">内联列表</h2>
+    <p>如果要使用有序或无序列表创建水平菜单，则需要将所有列表放在一行。可以通过将类 .list-inline 添加到ul或ol并将 .list-inline-item 添加到子li来实现。</p>
+    <div style="background-color: aliceblue;">
+        <ul class="list-inline">
+            <li class="list-inline-item">数学</li>
+            <li class="list-inline-item">语文</li>
+            <li class="list-inline-item">英语</li>
+        </ul>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">自定义列表</h2>
+    <div>
+        <dl class="row">
+            <dt class="col-md-3" style="background-color: coral;">bg-primary</dt>
+            <dd class="col-md-9">重要的背景颜色</dd>
+            <dt class="col-md-3" style="background-color: coral;">bg-success</dt>
+            <dd class="col-md-9">执行成的背景颜色</dd>
+            <dt class="col-md-3" style="background-color: coral;">bg-danger</dt>
+            <dd class="col-md-9">危险操作的背景颜色</dd>
+        </dl>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 排版</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1>Bootstrap 5 排版</h1>
+    <hr>
+    <p>
+        Bootstrap 5 默认的 font-size 为 16px，line-height 为1.5。默认的 font-family 为"Helvetica Neue", Helvetica, Arial,
+        sans-serif。
+        所有的 p 元素 margin-top:0、margin-bottom: 1rem(16px)。
+    </p>
+    <hr>
+    <h2 style="background-color: aquamarine;">使用标题标签 h1 - h6</h2>
+    <div style="background-color: aliceblue;">
+        <div class="h1">h1 Bootstrap 标题</div>
+        <div class="h2">h2 Bootstrap 标题</div>
+        <div class="h3">h3 Bootstrap 标题</div>
+        <div class="h4">h4 Bootstrap 标题</div>
+        <div class="h5">h5 Bootstrap 标题</div>
+        <div class="h6">h6 Bootstrap 标题</div>
+    </div>
+    <hr>
+    <h2 style="background-color:aquamarine">Display 标题类</h2>
+    <p>Bootstrap 5 还提供了使标题突出的类，当我们需要标题突出时可以使用这些标题类。突出标题以更大的字体显示，并会对其进行加粗。</p>
+    <p>提供了6种标题突出效果，分别是display-1 ~ display-6，数字越小，显示越突出。</p>
+    <div style="background-color: aliceblue;">
+        <h1 class="display-1">Display 1</h1>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
+        <h1 class="display-5">Display 5</h1>
+        <h1 class="display-6">Display 6</h1>
+        <h1 class="display-7">Display 7</h1>
+        <h1 class="display-8">Display 8</h1>
+        <h1>Without Display H1</h1>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">使用类突出显示段落</h2>
+    <p>可以通过在段落上加上类 .lead 来突出段落</p>
+    <div style="background-color: aliceblue;">
+        <p>这是 Bootstrap 5 中正常样式的段落。</p>
+        <p class="lead">这是 Bootstrap 5 中突出显示的段落。</p>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">自定义标题</h2>
+    <p>我们可使用带有类 .text-muted 类的 &lt;small&gt; 标签来显示更小和颜色更浅文本。</p>
+    <div style="background-color: aliceblue;">
+        <h5>文本标题
+            <small class="text-muted">更小且颜色更浅</small>
+        </h5>
+    </div>
+    <p>也可以添加 .small 类指定文本（为父元素的85%）</p>
+    <div style="background-color: aliceblue;">
+        <p class="small">这个段落字体更小。</p>
+        <p>这是常规段落。</p>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">文本对齐</h2>
+    <p>可以使用文本对齐类 text-start|center|end 轻松的将文本做对齐、右对齐或居中对齐。</p>
+    <div style="background-color: aliceblue;">
+        <p class="text-start">这个段落左边对齐。</p>
+        <p class="text-center">这个段落居中对齐。</p>
+        <p class="text-end">这个段落右边对齐。</p>
+    </div>
+    <p>
+        还可以使用响应式文本对齐类 text-*-* 根据屏幕大小对齐文本(文本默认左边对齐)。
+        第一个星是屏幕大小，包括 sm|md|lg|xl|xxl ，第二个星是对齐方式，包括 start|center|end 。
+    </p>
+    <div style="background-color: aliceblue;">
+        <p class="text-sm-start">文本将在屏幕宽度大于或等于576px视口左边对齐。</p>
+        <p class="text-md-center">文本将在屏幕宽度大于或等于768px视口居中对齐。</p>
+        <p class="text-lg-center">文本将在屏幕宽度大于或等于992px视口居中对齐。</p>
+        <p class="text-xl-end">文本将在屏幕宽度大于或等于1200px视口右边对齐。</p>
+        <p class="text-xxl-center">文本将在屏幕宽度大于或等于1400px视口居中对齐。</p>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">文本转换</h2>
+    <p>文本转换可以将文本设置为大写、小写或者首字母大写</p>
+    <ul>
+        <li>.text-lowercase: 设置文本小写</li>
+        <li>.text-uppercase: 设置文本大写</li>
+        <li>.text-capitalize: 设置单词首字母大写</li>
+    </ul>
+    <div style="background-color: aliceblue;">
+        <p class="text-lowercase">BOOTSTRAP</p>
+        <p class="text-uppercase">bootstrap</p>
+        <p class="text-capitalize">bOOTSTRAP bootstrap</p>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">截断长文本</h2>
+    <p>对于较长的文本，可以使用类 .text-truncate 用省略号阶段。在一行中显示一段文但没有足够的可用空间时，它特别有用。</p>
+    <div class="row" style="background-color: aliceblue;">
+        <div class="col-sm-2 text-truncate" style="background-color:mistyrose;">
+            这是一段很长很长的文本。这是一段很长很长的文本。这是一段很长很长的文本。
+        </div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">文本换行和溢出</h2>
+    <p>通过类名 .text-wrap 可用设置文字在超过盒子宽度时自动换行。</p>
+    <p>通过类名 .text-nowrap 可用阻止文字的换行，此时文字会溢出盒子。</p>
+    <div class="row" style="background-color: aliceblue;">
+        <div class="col-sm-2 text-wrap" style="background-color:cornsilk;">演示自动换行 ：这是一段很长很长的文本。这是一段很长很长的文本。这是一段很长很长的文本。
+        </div>
+        <div class="col-sm-2 text-nowrap" style="background-color:mistyrose;">演示阻止换行
+            ：这是一段很长很长的文本。这是一段很长很长的文本。这是一段很长很长的文本。</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">文本大小</h2>
+    <p>Bootstrap5 默认字体初始大小为16px</p>
+    <p>在Bootstrap5 中将文本大小分为6类，分别对应标题的h1~h6</p>
+    <p>添加类名 .fs-* 或 .h* (*号为 1～6的数值。fs: font-size缩写)。fs-6的默认大小为16px。</p>
+    <div class="row" style="background-color: aliceblue;">
+        <p class="fs-1">这是一个段落fs-1</p>
+        <p class="fs-2">这是一个段落fs-2</p>
+        <p class="fs-3">这是一个段落fs-3</p>
+        <p class="fs-4">这是一个段落fs-4</p>
+        <p class="fs-5">这是一个段落fs-5</p>
+        <p class="fs-6">这是一个段落fs-6</p>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">字体粗细及斜体</h2>
+    <p>在Bootstrap5 中将字体的粗细分为5类：</p>
+    <ul>
+        <li>.fw-bolder(bolder)</li>
+        <li>.fw-bold(700)</li>
+        <li>.fw-normal(400)</li>
+        <li>.fw-light(300)</li>
+        <li>.fw-lighter(lighter)</li>
+    </ul>
+    <p>斜体则是通过类名 .fst-italic 来控制，通过类名 .fst-normal 可用取消斜体。</p>
+    <div class="row" style="background-color: aliceblue;">
+        <p class="fw-bold">粗体文字</p>
+        <p class="fw-bolder">粗体文本（相对于父元素）</p>
+        <p class="fw-normal">正常的文本</p>
+        <p class="fw-light">细体文本</p>
+        <p class="fw-lighter">细体文本（相对于父元素）</p>
+        <p class="fst-italic">斜体</p>
+        <p class="fw-normal">取消斜体</p>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">行高（行距）</h2>
+    <p>Bootstrap5 默认字体初始行高为1.5</p>
+    <p>在Bootstrap5 中将行高分为了4种：</p>
+    <ul>
+        <li>.lh-1 (1rem)</li>
+        <li>.lh-sm (1.25rem)</li>
+        <li>.lh-base (1.5rem)</li>
+        <li>.lh-lg (2rem)</li>
+    </ul>
+    <div class="row pt-4 pb-4" style="background-color: aliceblue;">
+        <div class="lh-1" style="background-color:aqua">1rem 行高</div>
+        <div class="lh-sm" style="background-color:coral">1.25rem 行高</div>
+        <div class="lh-base" style="background-color:aqua">1.5rem 默认行高</div>
+        <div class="lh-lg" style="background-color:coral">2rem 行高</div>
+    </div>
+    <hr>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

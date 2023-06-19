@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 列表组</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1>Bootstrap5 列表组</h1>
+    <p>列表组是非常有用且灵活的组件，用以漂亮的方式显示元素列表。在最基本的形式中，列表组只是一个带有 .list-group 类的无需列表，且列表中的元素带有 .list-group-item 类。</p>
+    <hr>
+    <h2 style="background-color:aqua">基础的列表组</h2>
+    <ul class="list-group">
+        <li class="list-group-item">语文</li>
+        <li class="list-group-item">数学</li>
+        <li class="list-group-item">英语</li>
+    </ul>
+    <hr>
+    <h2 style="background-color:aqua">设置禁用和活动项</h2>
+    <p>可以将类 .active 添加到 .list-group-item 类的后面，用来指示当前条目元素是活动的。</p>
+    <p>可以将类 .disabled 添加到 .list-group-item 类的后面，用来指示当前条目元素是禁用的。</p>
+    <ul class="list-group">
+        <li class="list-group-item active">语文 - 活动的</li>
+        <li class="list-group-item">数学</li>
+        <li class="list-group-item disabled">英语 - 禁用的</li>
+    </ul>
+    <hr>
+    <h2 style="background-color:aqua">链接项的列表组</h2>
+    <p>要创建一个链接项的列表组，可以将 li 替换为 a 标签。如果想鼠标悬停显示灰色背景可以添加 .list-group-item-action 类。</p>
+    <ul class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">语文</a>
+        <a href="#" class="list-group-item list-group-item-action">数学</a>
+        <a href="#" class="list-group-item list-group-item-action">英语</a>
+    </ul>
+    <hr>
+    <h2 style="background-color:aqua">移除列表边框</h2>
+    <p>使用 .list-group-flush 类添加到 list-group 元素上，可以移除边框和圆角，从而创建与其父容器边对边的列表组。</p>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">语文</li>
+        <li class="list-group-item">数学</li>
+        <li class="list-group-item">英语</li>
+    </ul>
+    <hr>
+    <h2 style="background-color:aqua">水平列表组</h2>
+    <p>将 .list-group-horizontal 类添加到 list-group，可以将列表水平显示而不是垂直显示。</p>
+    <ul class="list-group list-group-horizontal">
+        <li class="list-group-item">语文</li>
+        <li class="list-group-item">数学</li>
+        <li class="list-group-item">英语</li>
+    </ul>
+    <hr>
+    <h2 style="background-color:aqua">创建编号列表组</h2>
+    <p>可以简单的通过在 .list-group 元素上添加类 .list-group-number 来创建带有元素编号的列表组。</p>
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item">语文</li>
+        <li class="list-group-item">数学</li>
+        <li class="list-group-item">英语</li>
+    </ol>
+    <p>数字是通过 css 而不是 ol 元素的默认浏览器样式生成的。</p>
+    <hr>
+    <h2 style="background-color:aqua">带徽章的列表组</h2>
+    <p>带徽章的列表组其实就是将Bootstrap的徽章组件和列表组件结合起来的效果，只需在 .list-group-item 的基础上追加徽章组件 badge 。</p>
+    <ul class="list-group">
+        <li class="list-group-item">
+            语文
+            <small class="bg-primary badge">hot</small>
+        </li>
+        <li class="list-group-item">数学</li>
+        <li class="list-group-item">英语</li>
+    </ul>
+    <hr>
+    <h2 style="background-color:aqua">多种颜色列表项</h2>
+    <p>和大多数组件一样，可以在列表组项目上使用相应的类对它们进行额外的背景色设置，来对它们实施额外的强调。</p>
+    <p>列表项目的颜色可以通过以下列来设置：</p>
+    <ul class="list-unstyled">
+        <li>.list-group-item-sucess</li>
+        <li>.list-group-item-info</li>
+        <li>.list-group-item-warnning</li>
+        <li>.list-group-item-danger</li>
+        <li>.list-group-item-primary</li>
+        <li>.list-group-item-secondary</li>
+        <li>.list-group-item-dark</li>
+        <li>.list-group-item-light</li>
+    </ul>
+    <p>下面是示例效果：</p>
+    <div class="row">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-sucess">Success</li>
+            <li class="list-group-item list-group-item-info">Info</li>
+            <li class="list-group-item list-group-item-warnning">Warnning</li>
+            <li class="list-group-item list-group-item-danger">Danger</li>
+            <li class="list-group-item list-group-item-primary">Primary</li>
+            <li class="list-group-item list-group-item-secondary">Secondary</li>
+            <li class="list-group-item list-group-item-dark">Dark</li>
+            <li class="list-group-item list-group-item-light">Light</li>
+        </ul>
+    </div>
+    <hr>
+    <h2 style="background-color:aqua">向列表组添加自定义内容</h2>
+    <p>Bootstrap在链接列表组的基础上增加了两个样式：</p>
+    <ul>
+        <li>.list-group-item-heading 用来定义列表头部样式</li>
+        <li>.list-group-item-text 用来定义列表主要内容</li>
+    </ul>
+    <p>这两个样式的最大作用是可以帮助开发者自定义列表项里的内容。</p>
+    <div class="list-group">
+        <a href="#" class="list-group-item active">
+            <h4 class="list-group-heading">网站服务</h4>
+        </a>
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-heading">产品介绍</h4>
+            <p class="list-group-item-text">什么是 Bootstrap</p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-heading active">关于我们</h4>
+            <p class="list-group-item-text">Bootstrap 大本营</p>
+        </a>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

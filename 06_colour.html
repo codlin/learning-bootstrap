@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 颜色</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bootstrap5 颜色</h1>
+        <hr>
+        <h2 style="background-color: aquamarine;">文本颜色类</h2>
+        <p>
+            Bootstrap5 提供了一些有代表意义的颜色类：.text-muted, .text-primary, .text-success, .text-info, .text-warning,
+            .text-danger,
+            .text-secondary, .text-dark, .text-body(默认颜色，为黑色), .text-light, .text-white。
+        </p>
+        <p>可用通过对上下文使用颜色类来强调文本bing通过颜色传达含义，针对文本颜色的类的示例：</p>
+        <div class="row bg-light">
+            <p class="text-muted">柔和的</p>
+            <p class="text-primary">重要的文本-蓝色</p>
+            <p class="text-success">用来表示成功执行的文本</p>
+            <p class="text-info">代表一些提示信息的文本</p>
+            <p class="text-warning">警告文本</p>
+            <p class="text-danger">危险操作文本</p>
+            <p class="text-secondary">副标题</p>
+            <p class="text-dark">深灰色文本</p>
+            <p class="text-body">默认颜色，黑色</p>
+            <p class="text-light">浅灰色文本</p>
+            <p class="text-white">白色文本</p>
+        </div>
+        <p>可设置文本颜色透明度为50%，使用 .text-black-50 或 .text-white-50 类。</p>
+        <div class="row">
+            <div class="text-black-50 bg-white">透明度为50%的黑色文本</div>
+            <div class="text-white-50 bg-black">透明度为50%的白色色文本（背景设置成了黑色）</div>
+        </div>
+        <hr>
+        <h2 style="background-color: aquamarine;">背景颜色类</h2>
+        <p>可以使用上下文背景颜色类来设置background-color元素以对它们实施额外的强调。</p>
+        <div class="row">
+            <p class="bg-primary text-white">重要的背景颜色。</p>
+            <p class="bg-success text-white">执行成功的背景颜色。</p>
+            <p class="bg-info text-white">信息的背景颜色。</p>
+            <p class="bg-warning text-white">警告的背景颜色。</p>
+            <p class="bg-danger text-white">危险的背景颜色。</p>
+            <p class="bg-secondary text-white">副标题的背景颜色。</p>
+            <p class="bg-dark text-white">深灰色的背景颜色。</p>
+            <p class="bg-light text-dark">浅灰色的背景颜色。</p>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
