@@ -4,12 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Bootstrap5 </title>
+    <title>Bootstrap5 图像</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <h1 class="h1">这是 bootstrap 附魔后的 h1 标题</h1>
+<body class="container">
+    <h1 class="h1">Bootstrap5 图像</h1>
+    <h2 style="background-color: aquamarine;">圆角图片</h2>
+    <p>.rounded 类为图片添加圆角</p>
+    <div>
+        <img src="static/images/beauty.jpg" class="rounded">
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">圆形图片</h2>
+    <p>.rounded-circle 类可以设置椭圆形图片</p>
+    <div>
+        <img src="static/images/beauty.jpg" class="rounded-circle">
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">缩略图</h2>
+    <p>.img-thumbnail 类用于设置图片缩略图</p>
+    <div>
+        <img src="static/images/beauty.jpg" class="img-thumbnail">
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">对齐图片</h2>
+    <p>使用 .float-start 类将图片向左浮动；或使用 .float-end 向右浮动。</p>
+    <div>
+        <img src="static/images/beauty.jpg" class="float-start">
+        <img src="static/images/beauty.jpg" class="float-end">
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">图片居中</h2>
+    <p>使用 .mx-auto(margin:auto)和 .d-block(display:block) 类来设置图片居中对齐：注意，是两个一起使用。</p>
+    <div>
+        <img src="static/images/beauty.jpg" class="mx-auto d-block">
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">响应式图片</h2>
+    <p>可以添加 .img-fluid 类来设置响应式图片。</p>
+    <p>此类主要将样式 max-width: 100% 和 height: auto 应用与图像以便它很好的缩放以适合包含元素。</p>
+    <div>
+        <img src="static/images/beauty.jpg" class="img-fluid">
+    </div>
+    <hr>
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 按钮</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1 class="h1">Bootstrap5 按钮</h1>
+    <h2 style="background-color: aquamarine;">Bootstrap 按钮样式</h2>
+    <p>Bootstrap 内置了几种预定义的按钮，每种样式都有自己的语义目的，并添加了一些额外的按钮</p>
+    <p>任何带有 class .btn 的元素都会继承圆角按钮的默认外观。</p>
+    <div>
+        <button>原始按钮</button>
+        <button type="button" class="btn">基本按钮</button>
+        <button type="button" class="btn btn-primary">主要按钮</button>
+        <button type="button" class="btn btn-secondary">次要按钮</button>
+        <button type="button" class="btn btn-success">成功按钮</button>
+        <button type="button" class="btn btn-info">信息按钮</button>
+        <button type="button" class="btn btn-warning">告警按钮</button>
+        <button type="button" class="btn btn-danger">危险按钮</button>
+        <button type="button" class="btn btn-light">浅色按钮</button>
+        <button type="button" class="btn btn-dark">深灰色按钮</button>
+        <button type="button" class="btn btn-link">链接按钮</button>
+    </div>
+    <p style="padding-top: 10px;">按钮类可用于 a, button 或 input 元素：</p>
+    <div>
+        <a href="#" class="btn btn-info">a 标签</a>
+        <input type="button" class="btn btn-primary" value="input">
+        <input type="submit" class="btn btn-success" value="submit">
+        <input type="reset" class="btn btn-warning" value="reset">
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">按钮设置边框</h2>
+    <p>Bootstrap5 还提供了8个轮廓/边框按钮。鼠标移动到按钮上添加突出效果。</p>
+    <div>
+        <button type="button" class="btn btn-outline-primary">主要按钮</button>
+        <button type="button" class="btn btn-outline-secondary">次要按钮</button>
+        <button type="button" class="btn btn-outline-success">成功按钮</button>
+        <button type="button" class="btn btn-outline-info">信息按钮</button>
+        <button type="button" class="btn btn-outline-warning">告警按钮</button>
+        <button type="button" class="btn btn-outline-danger">危险按钮</button>
+        <button type="button" class="btn btn-outline-light">浅色按钮</button>
+        <button type="button" class="btn btn-outline-dark">深灰色按钮</button>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">按钮尺寸</h2>
+    <p>Bootstrap5 可以设置按钮的大小，使用 .btn-lg 类设置大按钮，使用 .btn-sm 类设置小按钮。</p>
+    <div>
+        <button type="button" class="btn btn-primary btn-lg">大按钮</button>
+        <button type="button" class="btn btn-primary btn-sm">小按钮</button>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">块级按钮</h2>
+    <p>如需创建跨越整个父元素的块级按钮，通过添加 .btn-block 类可以设置块级按钮，.d-grid 类设置在父级元素中。</p>
+    <div>
+        <div class="d-grid">
+            <button class="btn btn-block btn-primary">块级按钮</button>
+        </div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">活动/禁用按钮</h2>
+    <p>按钮可以设置为激活或者禁止点击的状态。</p>
+    <p>
+        .active 类可以设置按钮是可用的，disabled 属性可以设置按钮是不可点击的。
+        注意，a 元素不支 disabled 属性，你可以通过添加 .diabled 类来禁止链接的点击。</p>
+    <div>
+        <button class="btn btn-primary active">active</button>
+        <button class="btn btn-primary" disabled>disabled</button>
+        <a href="#" class="btn btn-primary disabled">disabled link</a>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">Bootstrap5 按钮组</h2>
+
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
