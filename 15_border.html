@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 边框</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1 class="h1">Bootstrap5 边框</h1>
+    <h2 style="background-color: aquamarine;">边框类</h2>
+    <p>使用边框类为元素添加或者删除边框，边框的宽度为0-5</p>
+    <div>
+        <div class="border bg-light border-primary">边框颜色</div>
+        <br>
+        <div class="border border-0">边框宽度为0</div>
+        <br>
+        <div class="border border-3">边框宽度为3</div>
+        <br>
+        <div class="border border-5">边框宽度为 5</div>
+        <br>
+        <div class="border border-6">边框宽度设置为 6，实际实际不起作用，使用默认值 1</div>
+        <br>
+        <div class="border border-top-0">顶部无边框</div>
+        <br>
+        <div class="border border-bottom-0">底部无边框</div>
+        <br>
+        <div class="border border-start-0">左侧无边框</div>
+        <br>
+        <div class="border border-end-0">右侧无边框</div>
+        <br>
+        <div class="border-top">顶部边框</div>
+        <br>
+        <div class="border-bottom">底部边框</div>
+        <br>
+        <div class="border-start">左侧边框</div>
+        <br>
+        <div class="border-end">右侧边框</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">边框圆角</h2>
+    <p>使用 rounded 类为元素添加圆角。</p>
+    <div>
+        <div class="rounded bg-dark text-light">圆角</div>
+        <br>
+        <div class="rounded-top bg-success">头部圆角</div>
+        <br>
+        <div class="rounded-bottom bg-warning">底部圆角</div>
+        <br>
+        <div class="rounded-start bg-info">左边圆角</div>
+        <br>
+        <div class="rounded-end bg-danger">右边圆角</div>
+        <br>
+        <div class="rounded-circle bg-primary">椭圆</div>
+        <br>
+        <div class="rounded-pill bg-warning" style="width:100px">胶囊按钮</div>
+    </div>
+    <br>
+    <p>可以使用 .rounded-[1, 5]设置圆角的大小。</p>
+    <div>
+        <div class="rounded-0 bg-primary">.rounded-0</div>
+        <br>
+        <div class="rounded-1 bg-secondary">.rounded-1</div>
+        <br>
+        <div class="rounded-2 bg-success">.rounded-2</div>
+        <br>
+        <div class="rounded-3 bg-info">.rounded-3</div>
+        <br>
+        <div class="rounded-4 bg-info">.rounded-4</div>
+        <br>
+        <div class="rounded-5 bg-warning">.rounded-5</div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

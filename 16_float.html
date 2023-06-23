@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 浮动</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1 class="h1">Bootstrap5 浮动</h1>
+    <p>元素向右浮动使用 .float-end 类，向左浮动使用 .float-start。.clearfix 用于清除浮动。</p>
+    <div class="clearfix">
+        <div class="float-start bg-primary" style="height: 50px;">向左浮动</div>
+        <div class="float-end bg-primary" style="height: 50px;">向右浮动</div>
+    </div>
+    <hr>
+    <p>内联浮动示例：
+        浮动和元素在一个容器里时，会优先排列元素：
+        如果所有元素可以在一排里显示，则会试着执行待浮动的元素，如果无法浮动到前面，则在第二排显示，否则浮动到最前面，如果前面有已浮动的元素，则堆叠。
+        如果所有元素无法在一排显示，则浮动元素会在第二排尝试浮动，如果无法满足则等待下一排执行，否则就在当前行浮动。
+        浮动会尽量靠上排列，填满没有占有的空间。（请在浏览器里调节屏幕尺寸大小体会）
+    </p>
+    <div class="clearfix">
+        <span class="bg-primary" style="height:50px;">元素1</span>
+        <span class="bg-primary" style="height:50px;">元素2</span>
+        <span class="bg-primary" style="height:50px;">元素3</span>
+        <span class="bg-primary" style="height:50px;">元素4</span>
+        <span class="bg-primary" style="height:50px;">元素5</span>
+        <span class="bg-primary" style="height:50px;">元素6</span>
+        <span class="bg-primary" style="height:50px;">元素7</span>
+        <span class="bg-primary" style="height:50px;">元素8</span>
+        <span class="bg-primary" style="height:50px;">元素9</span>
+        <span class="float-start bg-success" style="height:50px;">向左浮动一</span>
+        <span class="float-start bg-warning" style="height:50px;">向左浮动二</span>
+        <span class="float-end bg-success" style="height:50px;">向右浮动一</span>
+        <span class="float-end bg-warning" style="height:50px;">向右浮动二</span>
+    </div>
+    <hr>
+    <p>块元素浮动示例：块元素会优先浮动到指定的方向，然后是普通的块元素。</p>
+    <div class="clearfix">
+        <div class="col-2 float-start bg-success" style="height:50px;">向左浮动一</div>
+        <div class="col-2 float-start bg-warning" style="height:50px;">向左浮动二</div>
+        <p>
+            These utility classes float an element to the left or right, or disable floating, based on the current
+            viewport size using the CSS float property. !important is included to avoid specificity issues. These use
+            the same viewport breakpoints as our grid system. Please be aware float utilities have no effect on flex
+            items.
+        </p>
+        <div class="col-2 float-end bg-success" style="height:50px;">向右浮动一</div>
+        <div class="col-2 float-end bg-warning" style="height:50px;">向右浮动二</div>
+        <p>
+            下载 Bootstrap 以获得编译后的 CSS 和 JavaScript 文件、源码，或者通过你所喜欢的软件包管理器，例如 npm、RubyGems 等，将 Bootstrap 添加到你的项目中。
+        </p>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">响应式浮动</h2>
+    <p>可以根据屏幕尺寸来设置浮动效果 .float-*-start|end。* 表示：</p>
+    <ul>
+        <li>sm (>= 576px)</li>
+        <li>md (>= 768px)</li>
+        <li>lg (>= 992px)</li>
+        <li>xl (>= 1200px)</li>
+        <li>xxl (>= 1400px)</li>
+    </ul>
+    <div class="float-lg-end bg-primary">在大型及以上屏幕上往右浮动</div>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

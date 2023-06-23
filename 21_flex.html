@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 Flex</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1 class="h1">Bootstrap5 Flex</h1>
+    <p>弹性盒子是css3 的一种新的布局方式，更适合响应式的设计。</p>
+    <h2 style="background-color: aquamarine;">创建一个弹性盒子</h2>
+    <p>使用 d-flex 类，创建 flexbox 容器并将直接子项转换为 flex 项。</p>
+    <div class="d-flex p-3 bg-info text-white">
+        <div class="bg-secondary mx-3">语文</div>
+        <div class="bg-secondary mx-3">数学</div>
+        <div class="bg-secondary mx-3">英语</div>
+    </div>
+    <p class="mt-3">使用 d-inline-flex 创建行内的 flexbox 容器。和 d-flex 相比，d-flex所在div元素跨越整行。</p>
+    <div class="d-inline-flex p-3 bg-info text-white">
+        <div class="bg-primary mx-3">语文</div>
+        <div class="bg-secondary mx-3">数学</div>
+        <div class="bg-warning mx-3">英语</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">水平方向</h2>
+    <p>.flex-row 可以设置弹性子元素水平显示，这是默认的。</p>
+    <p>.flex-row- reserve 可以设置弹性子元素右对齐显示，即与 .flex-row 方向相反。</p>
+    <div class="d-flex p-3 bg-info text-white flex-row-reverse">
+        <div class="bg-primary mx-3">语文</div>
+        <div class="bg-secondary mx-3">数学</div>
+        <div class="bg-warning mx-3">英语</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">垂直方向</h2>
+    <p>使用 .flex-column 垂直显示 flex （彼此堆），或者使用 .flex-column-reverse 反转垂直方向。</p>
+    <div class="d-flex p-3 bg-info text-white flex-column">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <p class="mt-3">反转垂直方向示例：</p>
+    <div class="d-flex p-3 bg-info text-white flex-column-reverse">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">换行</h2>
+    <p>默认情况下，项目都排在轴线上，flex-wrap 定义如果一条轴线排不下的情况下如何换行。</p>
+    <ul>
+        <li>flex-nowrap（默认）：不换行</li>
+        <li>flex-wrap：换行，第一行在上方</li>
+        <li>flex-wrap-reverse：换行，第一行在下方</li>
+    </ul>
+    <p>不换行示例：</p>
+    <div class="d-flex mt-3 flex-nowrap bg-info">
+        <div class="p-2 bg-danger">弹性项目一</div>
+        <div class="p-2 bg-warning">弹性项目二</div>
+        <div class="p-2 bg-info">弹性项目三</div>
+        <div class="p-2 bg-primary">弹性项目四</div>
+        <div class="p-2 bg-danger">弹性项目一</div>
+        <div class="p-2 bg-warning">弹性项目二</div>
+        <div class="p-2 bg-info">弹性项目三</div>
+        <div class="p-2 bg-primary">弹性项目四</div>
+        <div class="p-2 bg-danger">弹性项目一</div>
+        <div class="p-2 bg-warning">弹性项目二</div>
+        <div class="p-2 bg-info">弹性项目三</div>
+        <div class="p-2 bg-primary">弹性项目四</div>
+        <div class="p-2 bg-danger">弹性项目一</div>
+        <div class="p-2 bg-warning">弹性项目二</div>
+        <div class="p-2 bg-info">弹性项目三</div>
+        <div class="p-2 bg-primary">弹性项目四</div>
+    </div>
+    <p class="mt-3">换行示例：</p>
+    <div class="d-flex mt-3 flex-wrap bg-info">
+        <div class="p-2 bg-danger">弹性项目一</div>
+        <div class="p-2 bg-warning">弹性项目二</div>
+        <div class="p-2 bg-info">弹性项目三</div>
+        <div class="p-2 bg-primary">弹性项目四</div>
+        <div class="p-2 bg-danger">弹性项目一</div>
+        <div class="p-2 bg-warning">弹性项目二</div>
+        <div class="p-2 bg-info">弹性项目三</div>
+        <div class="p-2 bg-primary">弹性项目四</div>
+        <div class="p-2 bg-danger">弹性项目一</div>
+        <div class="p-2 bg-warning">弹性项目二</div>
+        <div class="p-2 bg-info">弹性项目三</div>
+        <div class="p-2 bg-primary">弹性项目四</div>
+        <div class="p-2 bg-danger">弹性项目一</div>
+        <div class="p-2 bg-warning">弹性项目二</div>
+        <div class="p-2 bg-info">弹性项目三</div>
+        <div class="p-2 bg-primary">弹性项目四</div>
+    </div>
+    <p class="mt-3">换行，第一行在下方示例：</p>
+    <div class="d-flex mt-3 flex-wrap-reverse bg-info">
+        <div class="p-2 bg-danger">弹性项目一</div>
+        <div class="p-2 bg-warning">弹性项目二</div>
+        <div class="p-2 bg-info">弹性项目三</div>
+        <div class="p-2 bg-primary">弹性项目四</div>
+        <div class="p-2 bg-danger">弹性项目一</div>
+        <div class="p-2 bg-warning">弹性项目二</div>
+        <div class="p-2 bg-info">弹性项目三</div>
+        <div class="p-2 bg-primary">弹性项目四</div>
+        <div class="p-2 bg-danger">弹性项目一</div>
+        <div class="p-2 bg-warning">弹性项目二</div>
+        <div class="p-2 bg-info">弹性项目三</div>
+        <div class="p-2 bg-primary">弹性项目四</div>
+        <div class="p-2 bg-danger">弹性项目一</div>
+        <div class="p-2 bg-warning">弹性项目二</div>
+        <div class="p-2 bg-info">弹性项目三</div>
+        <div class="p-2 bg-primary">弹性项目四</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">对齐内容</h2>
+    <h4 style="background-color:lightcyan;">使用 .justify-content-* 类改变弹性项目内容的对齐方式（主轴方向）。* 号允许的值有：</h4>
+    <ul>
+        <li>start（默认） - 开始对齐。如果排列方式是从左到右，那么 start 指示内容靠左对齐，反之靠右对齐。如果排列方式从上到下，则考上对齐，反之从下往上对齐。</li>
+        <li>end - 末尾对齐。如果排列方式是从左到右，那么 end 指示内容靠右对齐，反之靠左对齐。如果排列方式从上到下，则考上对齐，反之从下往上对齐。</li>
+        <li>center - 居中对齐。和上面一样，区分是 x 轴还是 y 轴排列元素。</li>
+        <li>between - 多个元素之间的距离相同，最外面的元素外面不留距离。</li>
+        <li>around - 所有元素的两边距离相同，因此两个元素之间的距离是最外面的元素的两倍。</li>
+    </ul>
+    <h6>主轴为 x 轴，从左到右排列，内容按 start 对齐</h6>
+    <div class="d-flex flex-row">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h6>主轴为 x 轴，从左到右排列，内容按 end 对齐</h6>
+    <div class="d-flex flex-row justify-content-end">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h6>主轴为 x 轴，<b>从右到左</b>排列，内容按 start 对齐</h6>
+    <div class="d-flex flex-row-reverse">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h6>主轴为 x 轴，<b>从右到左</b>排列，内容按 end 对齐</h6>
+    <div class="d-flex flex-row-reverse justify-content-end">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h6>主轴为 y 轴，从上往下排列，内容按 start 对齐</h6>
+    <div class="d-flex flex-column bg-info" style="height: 100px;">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h6>主轴为 y 轴，从上往下排列，内容按 end 对齐</h6>
+    <div class="d-flex flex-column justify-content-end bg-info" style="height: 100px;">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h6>主轴为 y 轴，<b>从下往上</b>排列，内容按 start 对齐</h6>
+    <div class="d-flex flex-column-reverse bg-info" style="height: 100px;">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h6>主轴为 y 轴，<b>从下往上</b>排列，内容按 end 对齐</h6>
+    <div class="d-flex flex-column-reverse justify-content-end bg-info" style="height: 100px;">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h6>主轴为 x 轴，从左到右排列，内容按 center 对齐</h6>
+    <div class="d-flex flex-row justify-content-center">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h6>主轴为 y 轴，<b>从下往上</b>排列，内容按 center 对齐</h6>
+    <div class="d-flex flex-column-reverse justify-content-center bg-info" style="height: 100px;">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h6>主轴为 x 轴，从左到右排列，内容按 between 对齐</h6>
+    <div class="d-flex flex-row justify-content-between border border-1">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h6>主轴为 y 轴，<b>从下往上</b>排列，内容按 between 对齐</h6>
+    <div class="d-flex flex-column-reverse justify-content-between bg-info" style="height: 100px;">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h6>主轴为 x 轴，从左到右排列，内容按 around 对齐</h6>
+    <div class="d-flex flex-row justify-content-around border border-1">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h6>主轴为 y 轴，<b>从下往上</b>排列，内容按 around 对齐</h6>
+    <div class="d-flex flex-column-reverse justify-content-around bg-info" style="height: 100px;">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h4 style="background-color:lightcyan;">使用 .align-items-* 类改变弹性条目的对齐方式（交叉轴方向）。* 号允许的值有：</h4>
+    <ul>
+        <li>start</li>
+        <li>end</li>
+        <li>center</li>
+        <li>baseline</li>
+        <li>stretch（默认）</li>
+    </ul>
+    <h6>主轴为 x 轴，从左到右排列，条目按 start 对齐</h6>
+    <div class="d-flex flex-row align-items-start" style="height: 100px; background-color: azure;">
+        <div class="bg-primary" style="height: 40px;">语文 - 高40px</div>
+        <div class="bg-secondary" style="height: 80px;">数学 - 高80px</div>
+        <div class="bg-warning" style="height: 60px;">英语 - 高60px</div>
+    </div>
+    <hr>
+    <h6>主轴为 x 轴，从左到右排列，条目按 center 对齐</h6>
+    <div class="d-flex flex-row align-items-center" style="height: 100px; background-color: azure;">
+        <div class="bg-primary" style="height: 40px;">语文 - 高40px</div>
+        <div class="bg-secondary" style="height: 80px;">数学 - 高80px</div>
+        <div class="bg-warning" style="height: 60px;">英语 - 高60px</div>
+    </div>
+    <hr>
+    <h6>主轴为 x 轴，从左到右排列，条目按 end 对齐</h6>
+    <div class="d-flex flex-row align-items-end" style="height: 100px; background-color: azure;">
+        <div class="bg-primary" style="height: 40px;">语文 - 高40px</div>
+        <div class="bg-secondary" style="height: 80px;">数学 - 高80px</div>
+        <div class="bg-warning" style="height: 60px;">英语 - 高60px</div>
+    </div>
+    <hr>
+    <h6>主轴为 x 轴，从左到右排列，条目按 stretch 对齐。默认对齐方式</h6>
+    <div class="d-flex flex-row align-items-stretch" style="height: 100px; background-color: azure;">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h6>主轴为 x 轴，从左到右排列，条目按 baseline 对齐。</h6>
+    <div class="d-flex flex-row align-items-baseline" style="height: 100px; background-color: azure;">
+        <div class="bg-primary" style="height: 40px;">语文 - 高40px</div>
+        <div class="bg-secondary" style="height: 80px;">数学 - 高80px</div>
+        <div class="bg-warning" style="height: 60px;">英语 - 高60px</div>
+    </div>
+    <hr>
+    <h6>主轴为 y 轴，从上往下排列，条目按 start 对齐</h6>
+    <div class="d-flex flex-column align-items-start" style="height: 100px; background-color: azure;">
+        <div class="bg-primary" style="width: 120px;">语文 - 宽110px</div>
+        <div class="bg-secondary" style="width: 180px;">数学 - 宽180px</div>
+        <div class="bg-warning" style="width: 160px;">英语 - 宽160px</div>
+    </div>
+    <hr>
+    <h6>主轴为 y 轴，从上往下排列，条目按 center 对齐</h6>
+    <div class="d-flex flex-column align-items-center" style="height: 100px; background-color: azure;">
+        <div class="bg-primary" style="width: 120px;">语文 - 宽110px</div>
+        <div class="bg-secondary" style="width: 180px;">数学 - 宽180px</div>
+        <div class="bg-warning" style="width: 160px;">英语 - 宽160px</div>
+    </div>
+    <hr>
+    <h6>主轴为 y 轴，从上往下排列，条目按 end 对齐</h6>
+    <div class="d-flex flex-column align-items-end" style="height: 100px; background-color: azure;">
+        <div class="bg-primary" style="width: 120px;">语文 - 宽110px</div>
+        <div class="bg-secondary" style="width: 180px;">数学 - 宽180px</div>
+        <div class="bg-warning" style="width: 160px;">英语 - 宽160px</div>
+    </div>
+    <hr>
+    <h6>主轴为 y 轴，从上往下排列，条目按 stretch 对齐。默认对齐方式</h6>
+    <div class="d-flex flex-column align-items-stretch" style="height: 100px; background-color: azure;">
+        <div class="bg-primary">语文</div>
+        <div class="bg-secondary">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h6>主轴为 y 轴，从上往下排列，条目按 baseline 对齐。</h6>
+    <div class="d-flex flex-column align-items-baseline" style="height: 100px; background-color: azure;">
+        <div class="bg-primary" style="width: 120px;">语文 - 宽110px</div>
+        <div class="bg-secondary" style="width: 180px;">数学 - 宽180px</div>
+        <div class="bg-warning" style="width: 160px;">英语 - 宽160px</div>
+    </div>
+    <hr>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

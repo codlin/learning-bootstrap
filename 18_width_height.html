@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 宽度和高度</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1 class="h1">Bootstrap5 宽度和高度</h1>
+    <h2 style="background-color: aquamarine;">宽度</h2>
+    <p>
+        使用 .w-* 类 （.w-25, .w-50, .w-75, .w-100, mw-auto, mw-100）设置元素的宽度。mw： max width
+    </p>
+    <div>
+        <div class="w-25 bg-primary">宽度为25%</div>
+        <div class="w-50 bg-secondary">宽度为50%</div>
+        <div class="w-75 bg-success">宽度为75%</div>
+        <div class="w-100 bg-warning">宽度为100%</div>
+        <div class="mw-auto bg-info">宽度为auto</div>
+        <div class="mw-100 bg-warning">最大宽度为100%</div>
+        <div class="vw-100 bg-warning">宽度为100vw （view width）</div>
+        <div class="min-vw-100 bg-warning">最小宽度为100vw （view width）</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">高度</h2>
+    <p>
+        使用 .h-* 类 （.h-25, .h-50, .h-75, .h-100, mh-auto, mh-100）设置元素的宽度
+    </p>
+    <div class="bg-light" style="height: 300px;">
+        <div class="h-25 bg-primary">高度为25%</div>
+        <div class="h-50 bg-secondary">高度为50%</div>
+        <div class="h-75 bg-success">高度为75%</div>
+        <div class="h-100 bg-warning">高度为100%</div>
+        <div class="mh-auto bg-primary">高度为auto</div>
+        <div class="mh-100 bg-warning">最大高度为100%</div>
+        <div class="vh-100 bg-primary">高度为100vh</div>
+        <div class="min-vh-100 bg-warning">最小高度为100vh</div>
+    </div>
+    <hr>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

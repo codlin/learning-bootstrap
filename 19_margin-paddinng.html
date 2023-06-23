@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 间距</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1 class="h1">Bootstrap5 间距</h1>
+    <p>在元素中涉及使用间距时，p-内间距， 这个属性会设定padding值；m-外间距，这个属性会设置margin值。</p>
+    <h2 style="background-color: aquamarine;">间距的方向</h2>
+    <ul>
+        <li>t - 用来设置 margin-top 或 padding-top</li>
+        <li>b - 用来设置 margin-bottom 或 padding-bottom</li>
+        <li>s - 用来设置 margin-left 或 padding-left</li>
+        <li>e - 用来设置 margin-right 或 padding-right</li>
+        <li>x- 用来设置 left 和 right</li>
+        <li>y- 用来设置 top 和 bottom</li>
+        <li>blank- 用设置元素在四个方向上的margin和padding</li>
+    </ul>
+    <hr>
+    <h2 style="background-color: aquamarine;">间距的距离</h2> 
+    <ul>
+        <li>0 - 把 margin 或 padding 设置为 0</li>
+        <li>1 - 把 margin 或 padding 设置为 0.25rem</li>
+        <li>2 - 把 margin 或 padding 设置为 0.5rem</li>
+        <li>3 - 把 margin 或 padding 设置为 1rem</li>
+        <li>4 - 把 margin 或 padding 设置为 1.5rem</li>
+        <li>5 - 把 margin 或 padding 设置为 3rem</li>
+    </ul>
+    <p>.mx-auto - 把 margin 设置为 auto，居中对齐</p>
+    <div>
+        <div class="pt-0 bg-primary">我只有上内边距（0rem）</div>
+        <div class="pt-1 bg-secondary">我只有上内边距（.25rem）</div>
+        <div class="pt-2 bg-warning">我只有上内边距（.5rem）</div>
+        <div class="pt-3 bg-danger">我只有上内边距（1rem）</div>
+        <div class="pt-4 bg-info">我只有上内边距（1.5rem）</div>
+        <div class="pt-5 bg-light">我只有上内边距（3rem）</div>
+        <div class="p-5 bg-primary">我在所有边都有内边距（3rem）</div>
+        <div class="m-5 bg-warning">我在所有边都有外边距（3rem）</div>
+        <div class="ms-3 bg-primary">我在左边有外边距（1rem）</div>
+        <div class="mx-3 bg-warning">我在左右两边有外边距（1rem）</div>
+        <div class="mx-auto bg-primary w-50">居中对齐</div>
+    </div>
+    <hr>
+    <p>响应式 mx 适用工具，调整浏览器窗口大小以查看效果：</p>
+    <div class="mx-md-5 bg-primary">在 md 屏幕上的 Margin x 5</div>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
