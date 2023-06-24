@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 导航</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1 class="h1">Bootstrap5 导航</h1>
+    <p>Bootstrap5 提供了一种简单快捷的方法来，它提供了非常灵活和优雅的选项卡和 Pills 等组件。</p>
+    <p>Bootstrap5 的所有导航组件，包括选项卡和Pills，都通过基本的 .nav 类共享相同的基本标记和样式。</p>
+    <h2 style="background-color: aquamarine;">创建基本导航</h2>
+    <p>要创建简单的水平菜单，可以将 .nav 类添加到 ul 元素，然后为每个 li 元素添加 .nav-item，并将 .nav-link 类添加到它们的链接元素。</p>
+    <div>
+        <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link">语文</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">数学</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">英语</a></li>
+        </ul>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">导航对齐</h2>
+    <p>默认情况下，导航是左对齐，可以使用 flexbox 使用程序添加 .justify-content-center 类使导航居中，添加 .justify-content-end 类使导航靠右。</p>
+    <div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a href="#" class="nav-link">语文</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">数学</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">英语</a></li>
+        </ul>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">垂直导航</h2>
+    <div>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a href="#" class="nav-link">语文</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">数学</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">英语</a></li>
+        </ul>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">选项卡</h2>
+    <p>使用类 .nav-tabs 添加到基本导航来生产选项卡式的导航，并将 .active 类添加到活动/当前链接。</p>
+    <div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#" class="nav-link active">语文</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">数学</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">英语</a></li>
+        </ul>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">创建 pills 导航</h2>
+    <div>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active">语文</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">数学</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">英语</a></li>
+        </ul>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">等宽的选项卡</h2>
+    <p>使用 .nav-justified 类（等宽）对齐标签活胶囊让标签活胶囊式导航与父元素等宽。</p>
+    <div>
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item"><a href="#" class="nav-link active">语文</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">数学</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">英语</a></li>
+        </ul>
+    </div>
+    <hr>
+    <h1>Bootstrap5 导航栏</h1>
+    <p>
+        Bootstrap5 导航栏组件为网站或应用程序创建响应式导航标题。这些响应式导航栏在手机等视口的设备上会折叠，但当用户单机切换按钮时会展开。
+        但是，它在中大型设备上将正常显示为水平。
+    </p>
+    <h2 style="background-color: aquamarine;">基础的导航栏</h2>
+    <p>
+        通过 .navbar 类可以创建一个标准的导航栏，若要创建响应式的导航栏，
+        可以再此基础上添加类 .navbar-expand-xxl|xl|lg|md|sm来创建（大屏幕水平展开，小屏幕垂直堆叠）。
+    </p>
+    <p>导航栏的选项可以使用 ul 元素 并添加 .navbar-nav 类。然后在 li 上添加 .nav-item 类。&lta&gt 上 使用 .nav-link。</p>
+    <div>
+        <nav class="navbar navbar-expand-sm bg-primary">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">语文</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">数学</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">英语</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">垂直导航栏</h2>
+    <p>删除 .navbar-expand-* 类可以创建始终垂直的导航栏。</p>
+    <div>
+        <nav class="navbar bg-primary">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">语文</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">数学</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">英语</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">彩色导航栏</h2>
+    <p>可以使用 .bg-color 类来更改导航栏的背景色，.navbar-dark 类为导航栏中的所有链接添加白色文本颜色，或使用 .navbar-light 类添加黑色文本颜色。</p>
+    <div>
+        <nav class="navbar navbar-light navbar-expand">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">语文</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">数学</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">英语</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">固定导航栏</h2>
+    <p>固定导航栏可以固定在页面的顶部或底部。固定导航栏会在独立于页面滚动的固定位置保持可见。</p>
+    <p>.fixed-top 使导航栏固定在页面顶部。</p>
+    <p>.fixed-bottom 使导航栏固定在页面底部。</p>
+    <div>
+        <nav class="navbar fixed-top">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">语文</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">数学</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">英语</a></li>
+            </ul>
+        </nav>
+        <nav class="navbar fixed-bottom">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">语文</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">数学</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">英语</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">导航栏黏在顶部</h2>
+    <p>使用 .navbar 元素上的 .sticky-top 类来创建岁页面滚动直至到达顶部然后停留在那里的粘性顶部导航栏。</p>
+    <div>
+        <nav class="navbar navbar-expand-md bg-primary sticky-top">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">语文</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">数学</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">英语</a></li>
+            </ul>
+        </nav>
+        <div style="height: 1800px;"></div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

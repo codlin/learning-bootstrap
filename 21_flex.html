@@ -9,7 +9,7 @@
 </head>
 
 <body class="container">
-    <h1 class="h1">Bootstrap5 Flex</h1>
+    <h1 class="h1">Bootstrap5 弹性盒子</h1>
     <p>弹性盒子是css3 的一种新的布局方式，更适合响应式的设计。</p>
     <h2 style="background-color: aquamarine;">创建一个弹性盒子</h2>
     <p>使用 d-flex 类，创建 flexbox 容器并将直接子项转换为 flex 项。</p>
@@ -114,7 +114,7 @@
     </div>
     <hr>
     <h2 style="background-color: aquamarine;">对齐内容</h2>
-    <h4 style="background-color:lightcyan;">使用 .justify-content-* 类改变弹性项目内容的对齐方式（主轴方向）。* 号允许的值有：</h4>
+    <h4 style="background-color:lightcyan;">使用 .justify-content-* 类改变【单行】弹性项目内容的对齐方式（主轴方向）。* 号允许的值有：</h4>
     <ul>
         <li>start（默认） - 开始对齐。如果排列方式是从左到右，那么 start 指示内容靠左对齐，反之靠右对齐。如果排列方式从上到下，则考上对齐，反之从下往上对齐。</li>
         <li>end - 末尾对齐。如果排列方式是从左到右，那么 end 指示内容靠右对齐，反之靠左对齐。如果排列方式从上到下，则考上对齐，反之从下往上对齐。</li>
@@ -220,13 +220,13 @@
         <div class="bg-warning">英语</div>
     </div>
     <hr>
-    <h4 style="background-color:lightcyan;">使用 .align-items-* 类改变弹性条目的对齐方式（交叉轴方向）。* 号允许的值有：</h4>
+    <h4 style="background-color:lightcyan;">使用 .align-items-* 类改变【单行】弹性条目的对齐方式（交叉轴方向）。* 号允许的值有：</h4>
     <ul>
         <li>start</li>
         <li>end</li>
         <li>center</li>
         <li>baseline</li>
-        <li>stretch（默认）</li>
+        <li>stretch（默认） - 如果元素没有设置高度，将默认占满父容器的高度。</li>
     </ul>
     <h6>主轴为 x 轴，从左到右排列，条目按 start 对齐</h6>
     <div class="d-flex flex-row align-items-start" style="height: 100px; background-color: azure;">
@@ -297,6 +297,211 @@
         <div class="bg-secondary" style="width: 180px;">数学 - 宽180px</div>
         <div class="bg-warning" style="width: 160px;">英语 - 宽160px</div>
     </div>
+    <hr>
+    <h4 style="background-color:lightcyan;">使用 .align-content-* 用于控制【多行】项目的对齐方式，* 允许的值有：</h4>
+    <ul>
+        <li>start</li>
+        <li>end</li>
+        <li>center</li>
+        <li>between</li>
+        <li>around</li>
+        <li>stretch （默认值）</li>
+    </ul>
+    <p>多行按照 align-content-start 对齐：</p>
+    <div class="d-flex flex-wrap align-content-start" style="height: 150px; background-color: aliceblue;">
+        <div class="bg-primary" style="width: 400px;">弹性盒子1</div>
+        <div class="bg-secondary" style="width: 400px;">弹性盒子2</div>
+        <div class="bg-success" style="width: 400px;">弹性盒子3</div>
+        <div class="bg-warning" style="width: 400px;">弹性盒子4</div>
+        <div class="bg-info" style="width: 400px;">弹性盒子5</div>
+        <div class="bg-primary" style="width: 400px;">弹性盒子6</div>
+        <div class="bg-secondary" style="width: 400px;">弹性盒子7</div>
+        <div class="bg-success" style="width: 400px;">弹性盒子8</div>
+        <div class="bg-warning" style="width: 400px;">弹性盒子9</div>
+    </div>
+    <p class="mt-3">多行按照 align-content-end 对齐：</p>
+    <div class="d-flex flex-wrap align-content-end" style="height: 150px; background-color: aliceblue;">
+        <div class="bg-primary" style="width: 400px;">弹性盒子1</div>
+        <div class="bg-secondary" style="width: 400px;">弹性盒子2</div>
+        <div class="bg-success" style="width: 400px;">弹性盒子3</div>
+        <div class="bg-warning" style="width: 400px;">弹性盒子4</div>
+        <div class="bg-info" style="width: 400px;">弹性盒子5</div>
+        <div class="bg-primary" style="width: 400px;">弹性盒子6</div>
+        <div class="bg-secondary" style="width: 400px;">弹性盒子7</div>
+        <div class="bg-success" style="width: 400px;">弹性盒子8</div>
+        <div class="bg-warning" style="width: 400px;">弹性盒子9</div>
+    </div>
+    <p class="mt-3">多行按照 align-content-center 对齐：</p>
+    <div class="d-flex flex-wrap align-content-center" style="height: 150px; background-color: aliceblue;">
+        <div class="bg-primary" style="width: 400px;">弹性盒子1</div>
+        <div class="bg-secondary" style="width: 400px;">弹性盒子2</div>
+        <div class="bg-success" style="width: 400px;">弹性盒子3</div>
+        <div class="bg-warning" style="width: 400px;">弹性盒子4</div>
+        <div class="bg-info" style="width: 400px;">弹性盒子5</div>
+        <div class="bg-primary" style="width: 400px;">弹性盒子6</div>
+        <div class="bg-secondary" style="width: 400px;">弹性盒子7</div>
+        <div class="bg-success" style="width: 400px;">弹性盒子8</div>
+        <div class="bg-warning" style="width: 400px;">弹性盒子9</div>
+    </div>
+    <p class="mt-3">多行按照 align-content-stretch 对齐：</p>
+    <div class="d-flex flex-wrap align-content-stretch" style="height: 150px; background-color: aliceblue;">
+        <div class="bg-primary" style="width: 400px;">弹性盒子1</div>
+        <div class="bg-secondary" style="width: 400px;">弹性盒子2</div>
+        <div class="bg-success" style="width: 400px;">弹性盒子3</div>
+        <div class="bg-warning" style="width: 400px;">弹性盒子4</div>
+        <div class="bg-info" style="width: 400px;">弹性盒子5</div>
+        <div class="bg-primary" style="width: 400px;">弹性盒子6</div>
+        <div class="bg-secondary" style="width: 400px;">弹性盒子7</div>
+        <div class="bg-success" style="width: 400px;">弹性盒子8</div>
+        <div class="bg-warning" style="width: 400px;">弹性盒子9</div>
+    </div>
+    <p class="mt-3">多行按照 align-content-between 对齐：</p>
+    <div class="d-flex flex-wrap align-content-between" style="height: 150px; background-color: aliceblue;">
+        <div class="bg-primary" style="width: 400px;">弹性盒子1</div>
+        <div class="bg-secondary" style="width: 400px;">弹性盒子2</div>
+        <div class="bg-success" style="width: 400px;">弹性盒子3</div>
+        <div class="bg-warning" style="width: 400px;">弹性盒子4</div>
+        <div class="bg-info" style="width: 400px;">弹性盒子5</div>
+        <div class="bg-primary" style="width: 400px;">弹性盒子6</div>
+        <div class="bg-secondary" style="width: 400px;">弹性盒子7</div>
+        <div class="bg-success" style="width: 400px;">弹性盒子8</div>
+        <div class="bg-warning" style="width: 400px;">弹性盒子9</div>
+    </div>
+    <p class="mt-3">多行按照 align-content-around 对齐：</p>
+    <div class="d-flex flex-wrap align-content-around" style="height: 150px; background-color: aliceblue;">
+        <div class="bg-primary" style="width: 400px;">弹性盒子1</div>
+        <div class="bg-secondary" style="width: 400px;">弹性盒子2</div>
+        <div class="bg-success" style="width: 400px;">弹性盒子3</div>
+        <div class="bg-warning" style="width: 400px;">弹性盒子4</div>
+        <div class="bg-info" style="width: 400px;">弹性盒子5</div>
+        <div class="bg-primary" style="width: 400px;">弹性盒子6</div>
+        <div class="bg-secondary" style="width: 400px;">弹性盒子7</div>
+        <div class="bg-success" style="width: 400px;">弹性盒子8</div>
+        <div class="bg-warning" style="width: 400px;">弹性盒子9</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">顺序</h2>
+    <p>使用.order类可以更改特定flex项的视觉顺序，其中最低的数字具有最高的优先级，即数字小的排在数字大的前面。默认优先级为0。</p>
+    <div class="d-flex">
+        <div class="bg-primary">语文</div>
+        <div class="bg-success order-3">数学</div>
+        <div class="bg-warning order-1">英语</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">等宽</h2>
+    <p>在 flex 项目上使用 .flex-fill 可以强制它们等宽。</p>
+    <div class="d-flex">
+        <div class="bg-primary flex-fill">语文</div>
+        <div class="bg-success flex-fill">数学</div>
+        <div class="bg-warning flex-fill">英语</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">伸展</h2>
+    <p>在 flex 项目上使用 .flex-grow-1 可以占用多余的空间。</p>
+    <div class="d-flex">
+        <div class="bg-primary">语文</div>
+        <div class="bg-success">数学</div>
+        <div class="bg-warning flex-grow-1">英语</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">指定子元素对齐</h2>
+    <p>要设置指定子元素对齐可以使用 .align-self-* 类来控制，它允许单个项目有与其它项目不一样的对齐方式。</p>
+    <ul>
+        <li>start</li>
+        <li>end</li>
+        <li>center</li>
+        <li>baseline</li>
+        <li>stretch (default)</li>
+    </ul>
+    <div class="d-flex flex-column align-items-center">
+        <div class="bg-primary">语文</div>
+        <div class="bg-success align-self-end">数学</div>
+        <div class="bg-warning">英语</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">响应式flex类</h2>
+    <p>可以根据不同的设备设置 flex 类，从而实现响应式布局，* 号可以有的值：sm、md、lg 或 xl。</p>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr class="bg-primary text-light">
+                <th>类</th>
+                <th>实例</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">弹性容器</td>
+            </tr>
+            <tr>
+                <td>.d-*-flex</td>
+                <td>根据不同的屏幕设备创建弹性盒子容器</td>
+            </tr>
+            <tr>
+                <td>.d-*-inline-flex</td>
+                <td>根据不同的屏幕设备创建行内弹性盒子容器</td>
+            </tr>
+            <tr>
+                <td colspan="2">方向</td>
+            </tr>
+            <tr>
+                <td>.flex-*-row</td>
+                <td>根据不同的屏幕设备在水平方向显示弹性子元素。</td>
+            </tr>
+            <tr>
+                <td>.flex-*-row-reverse</td>
+                <td>根据不同的屏幕设备在水平方向显示弹性子元素，且右对齐。</td>
+            </tr>
+            <tr>
+                <td>.flex-*-column</td>
+                <td>根据不同的屏幕设备在垂直方向显示弹性子元素。</td>
+            </tr>
+            <tr>
+                <td>.flex-*-column-reverse</td>
+                <td>根据不同的屏幕设备在垂直方向显示弹性子元素，且从下往上。</td>
+            </tr>
+            <tr>
+                <td colspan="2">内容对齐</td>
+            </tr>
+            <tr>
+                <td>.justify-content-*-start</td>
+                <td>根据不同屏幕设备在开始位置显示弹性子元素（左对齐或顶部对齐）</td>
+            </tr>
+            <tr>
+                <td>.justify-content-*-center</td>
+                <td>根据不同屏幕设备在居中位置显示弹性子元素（居中对齐）</td>
+            </tr>
+            <tr>
+                <td>.justify-content-*-end</td>
+                <td>根据不同屏幕设备在结束位置显示弹性子元素（右对齐或底部对齐）</td>
+            </tr>
+            <tr>
+                <td>.justify-content-*-between</td>
+                <td>根据不同屏幕设备使用 between 显示弹性子元素 </td>
+            </tr>
+            <tr>
+                <td>.justify-content-*-around</td>
+                <td>根据不同屏幕设备使用 around 显示弹性子元素</td>
+            </tr>
+            <tr>
+                <td colspan="2">等宽</td>
+            </tr>
+            <tr>
+                <td>.flex-*-fill</td>
+                <td>根据不同的屏幕设备强制元素等宽。</td>
+            </tr>
+            <tr>
+                <td colspan="2">扩展</td>
+            </tr>
+            <tr>
+                <td>.flex-*-grow-0</td>
+                <td>不同的屏幕设备不设置扩展。</td>
+            </tr>
+            <tr>
+                <td>.flex-*-grow-1</td>
+                <td>不同的屏幕设备设置扩展。</td>
+            </tr>
+        </tbody>
+    </table>
     <hr>
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
 </body>

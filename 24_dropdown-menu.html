@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 下拉菜单</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1 class="h1">Bootstrap5 下拉菜单</h1>
+    <p>下拉菜单通常用于创建导航标题内，在用户悬停鼠标或单击出发元素时显示相关链接列表。</p>
+    <h2 style="background-color: aquamarine;">基础下拉菜单</h2>
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">下拉按钮</button>
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">语文</a></li>
+            <li><a href="#" class="dropdown-item">数学</a></li>
+            <li><a href="#" class="dropdown-item">英语</a></li>
+        </ul>
+    </div>
+    <p>Bootstrap 下拉菜单有两个组件 —— 下拉触发元素（如本例子中的buton）和下拉菜单本身（如本例子中的 ul 元素）。</p>
+    <p>.dropdown 类指示下拉菜单。</p>
+    <p>如需打开下拉菜单，需要设置 .dropdown-toggle 类，该类定义了触发器元素，而触发器元素上需要属性 data-bs-toggle="dropdown" 来切换下拉菜单。</p>
+    <p>带有 .dropdown-menu 类的 div 元素可以构建下拉菜单。然后将 .dropdown-item 类添加到下拉菜单的每个元素（链接或按钮）。</p>
+    <hr>
+    <h2 style="background-color: aquamarine;">下拉列表分割线</h2>
+    <p>.dropdown-divider 类用于to水平细边框分割下拉菜单中的链接。</p>
+    <p>.dropdown-header 向下拉菜单的标签区域添加标题。</p>
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">下拉菜单</button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-header">学科</li>
+            <li><a href="#" class="dropdown-item">语文</a></li>
+            <li><a href="#" class="dropdown-item">数学</a></li>
+            <li><a href="#" class="dropdown-item">英语</a></li>
+            <li class="dropdown-divider"></li>
+            <li class="dropdown-header">实验</li>
+            <li><a href="#" class="dropdown-item">化学</a></li>
+        </ul>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">导航栏中的下拉菜单</h2>
+    <div>
+        <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link">语文</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">数学</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">外语</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">英语</a></li>
+                    <li><a href="#" class="dropdown-item">法语</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">选项卡中的下拉菜单</h2>
+    <div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#" class="nav-link">语文</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">数学</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">外语</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">英语</a></li>
+                    <li><a href="#" class="dropdown-item">法语</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <h2 style="background-color: aquamarine;">按钮组下拉菜单</h2>
+    <div class="btn-group dropdown">
+        <button type="button" class="btn btn-success">语文</button>
+        <button type="button" class="btn btn-warning">数学</button>
+        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">外语</button>
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">英语</a></li>
+            <li><a href="#" class="dropdown-item">法语</a></li>
+        </ul>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
