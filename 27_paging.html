@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 分页</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1 class="h1">Bootstrap5 分页</h1>
+    <h2 style="background-color: aquamarine;">基础分页</h2>
+    <p>要创建基础分页，可以在 ul 元素上添加 .pagination 类。然后在 li 元素上添加 .page-item 。li 元素的 a 标签上添加 .page-link 类。</p>
+    <ul class="pagination">
+        <li class="page-item"><a href="" class="page-link">上一页</a></li>
+        <li class="page-item"><a href="" class="page-link">1</a></li>
+        <li class="page-item"><a href="" class="page-link">2</a></li>
+        <li class="page-item"><a href="" class="page-link">3</a></li>
+        <li class="page-item"><a href="" class="page-link">下一页</a></li>
+    </ul>
+    <hr>
+    <h2 style="background-color: aquamarine;">活动状态的分页</h2>
+    <p>.active 类用于突出显示当前页</p>
+    <ul class="pagination">
+        <li class="page-item"><a href="" class="page-link">上一页</a></li>
+        <li class="page-item"><a href="" class="page-link">1</a></li>
+        <li class="page-item active"><a href="" class="page-link">2</a></li>
+        <li class="page-item"><a href="" class="page-link">3</a></li>
+        <li class="page-item"><a href="" class="page-link">下一页</a></li>
+    </ul>
+    <hr>
+    <h2 style="background-color: aquamarine;">禁用状态的分页</h2>
+    <p>.disabled 类用不不可点击状态的链接</p>
+    <ul class="pagination">
+        <li class="page-item"><a href="" class="page-link">上一页</a></li>
+        <li class="page-item"><a href="" class="page-link">1</a></li>
+        <li class="page-item disabled"><a href="" class="page-link">2</a></li>
+        <li class="page-item"><a href="" class="page-link">3</a></li>
+        <li class="page-item"><a href="" class="page-link">下一页</a></li>
+    </ul>
+    <hr>
+    <h2 style="background-color: aquamarine;">分页大小</h2>
+    <p>分页也可以被调整为更大或更小的尺寸，较大的块添加类 .pagination-lg 或较小的块添加 .pagination-sm 类。</p>
+    <ul class="pagination pagination-sm">
+        <li class="page-item"><a href="" class="page-link">上一页</a></li>
+        <li class="page-item"><a href="" class="page-link">1</a></li>
+        <li class="page-item"><a href="" class="page-link">2</a></li>
+        <li class="page-item"><a href="" class="page-link">3</a></li>
+        <li class="page-item"><a href="" class="page-link">下一页</a></li>
+    </ul>
+    <ul class="pagination pagination-lg">
+        <li class="page-item"><a href="" class="page-link">上一页</a></li>
+        <li class="page-item"><a href="" class="page-link">1</a></li>
+        <li class="page-item"><a href="" class="page-link">2</a></li>
+        <li class="page-item"><a href="" class="page-link">3</a></li>
+        <li class="page-item"><a href="" class="page-link">下一页</a></li>
+    </ul>
+    <hr>
+    <h2 style="background-color: aquamarine;">分页对齐</h2>
+    <p>默认情况下，分页水平左对齐。要将其与页面中心对齐，将类 .justify-content-center 添加到 .pagination 基类中。</p>
+    <ul class="pagination justify-content-center">
+        <li class="page-item"><a href="" class="page-link">上一页</a></li>
+        <li class="page-item"><a href="" class="page-link">1</a></li>
+        <li class="page-item"><a href="" class="page-link">2</a></li>
+        <li class="page-item"><a href="" class="page-link">3</a></li>
+        <li class="page-item"><a href="" class="page-link">下一页</a></li>
+    </ul>
+    <hr>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

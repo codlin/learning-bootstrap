@@ -1,0 +1,13 @@
+body {
+    padding-top: 3.5rem;
+}
+.header-top .search {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    color: #999;
+}
+
+.glyphicon {
+    font-size: 32px;
+}

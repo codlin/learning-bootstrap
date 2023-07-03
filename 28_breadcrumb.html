@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 面包屑</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom .breadcrumb-item+.breadcrumb-item::before {
+            content: ">"
+        }
+    </style>
+</head>
+
+<body class="container">
+    <h1 class="h1">Bootstrap5 面包屑</h1>
+    <p>
+        面包屑是一种，通过 css 为各导航条之间分隔符。
+        Bootstrap5 创建静态面包屑，只需要有序列表上使用 .breadcrumb 类。
+        在 li 元素上使用 .breadcrumb-item 类。
+    </p>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="">首页</a></li>
+            <li class="breadcrumb-item"><a href="">学习</a></li>
+            <li class="breadcrumb-item active">Bootstrap5</li>
+        </ol>
+    </nav>
+    <p>默认的面包屑分隔符是 / 。然而我可以使用自定义 css 对其进行更改。</p>
+    <code>
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: ">"
+        }
+    </code>
+    <br><br>
+    <nav class="custom">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="">首页</a></li>
+            <li class="breadcrumb-item"><a href="">学习</a></li>
+            <li class="breadcrumb-item active">Bootstrap5</li>
+        </ol>
+    </nav>
+    <hr>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

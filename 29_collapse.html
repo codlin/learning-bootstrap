@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 折叠</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1 class="h1">Bootstrap5 折叠</h1>
+    <p>要隐藏和显示大量内容时，可以折叠组件非常有用。</p>
+    <p>Bootstrap 折叠插件需要两个元素才能正经工作————触发元素，如按钮和超链接，以及可以折叠元素本身。</p>
+    <div>
+        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">折叠按钮</button>
+        <div id="demo" class="collapse">
+            <p>显示出来的内容</p>
+        </div>
+    </div>
+    <br>
+    <p>.collapse 类指示可折叠元素；通过点击按钮，可以显示或隐藏按钮。</p>
+    <p>对于 a 元素，你可以使用 href 属性代替 data-bs-target 属性：</p>
+    <div>
+        <a href="#demo1" data-bs-toggle="collapse">折叠按钮</a>
+        <div id="demo1" class="collapse">
+            <p>显示出来的内容</p>
+        </div>
+    </div>
+    <br>
+    <p>默认情况下，可折叠内容时隐藏的。但是你可添加 .show 类来默认显示。</p>
+    <div>
+        <a href="#demo2" data-bs-toggle="collapse">折叠按钮</a>
+        <div id="demo2" class="collapse show">
+            <p>显示出来的内容</p>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

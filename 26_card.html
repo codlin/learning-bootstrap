@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 卡片</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1 class="h1">Bootstrap5 卡片</h1>
+    <p>卡片提供了一种灵活的、可扩展的内容容器。通过类 .card 和 .card-body 可以快速创建一个简单的卡片，卡片可以包含头部、
+        内容、底部以及各种颜色设置。
+    </p>
+    <h2 style="background-color: aquamarine;">创建基本的卡片</h2>
+    <p>外部包装器需要用基类 .card， 内容可放在 .card-body 元素内。</p>
+    <div class="card">
+        <div class="card-body">基础卡片</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">页眉和页脚</h2>
+    <p>.card-header 为卡片添加页眉， .card-footer 为卡片添加页脚。</p>
+    <div class="card">
+        <div class="card-header">大菠萝III</div>
+        <div class="card-body">秘境挑战</div>
+        <div class="card-footer">暴雪动视</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">带有标题、文本和链接的卡片</h2>
+    <p>.card-title 为文本设置标题样式，.card-text 设置普通文本格式，.card-link 为链接设置样式。</p>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">大菠萝III</h4>
+            <p class="card-text">秘境挑战</p>
+            <a href="#" class="card-link">暴雪动视</a>
+        </div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">卡片图像</h2>
+    <p>可以给 img 元素添加 .card-img-top 使图片位于文字上方，或添加 .card-img-bottom 使图片位于文字下方，以此来设置卡片中图片的位置。</p>
+    <div class="card">
+        <div class="card-header">Beauty</div>
+        <div class="card-body">
+            <img src="static/images/beauty.jpg" alt="beauty" class="card-img-top">
+            <h4 class="card-title">诗和远方</h4>
+        </div>
+        <div class="card-footer">@instgram</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">图像作为卡片背景</h2>
+    <p>使用 .card-img-overlay 将图像转换为卡片背景并叠加卡片的文字</p>
+    <div class="card">
+        <img src="static/images/beauty.jpg" alt="beauty" class="card-img-top">
+        <div class="card-img-overlay">
+            <h4 class="card-title">诗和远方</h4>
+            <p class="card-text">人生就是一场旅行✈️</p>
+        </div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">示例</h2>
+    <div class="card">
+        <div class="card-header">旅行</div>
+        <div class="card-body">
+            <img src="static/images/beauty.jpg" alt="beauty" class="card-img-top">
+            <h4 class="card-title">诗和远方</h4>
+            <p class="card-text">人生就是一场旅行✈️</p>
+            <a href="#" class="card-link">看海的日子</a>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">欧洲</li>
+            <li class="list-group-item">澳洲</li>
+            <li class="list-group-item">美洲</li>
+        </ul>
+        <div class="card-footer">@instgram</div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">卡片分组</h2>
+    <div class="card-group">
+        <div class="card bg-primary" style="width: 300px;">
+            <img src="static/images/beauty.jpg" alt="beauty" class="card-img-top">
+            <div class="card-img-overlay">
+                <h4 class="card-title">诗和远方</h4>
+                <p class="card-text">人生就是一场旅行✈️</p>
+            </div>
+        </div>
+        <div class="card bg-success" style="width: 300px;">
+            <img src="static/images/beauty.jpg" alt="beauty" class="card-img-top">
+            <div class="card-img-overlay">
+                <h4 class="card-title">诗和远方</h4>
+                <p class="card-text">人生就是一场旅行✈️</p>
+            </div>
+        </div>
+        <div class="card bg-warning" style="width: 300px;">
+            <img src="static/images/beauty.jpg" alt="beauty" class="card-img-top">
+            <div class="card-img-overlay">
+                <h4 class="card-title">诗和远方</h4>
+                <p class="card-text">人生就是一场旅行✈️</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

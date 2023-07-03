@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 表单</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1 class="h1">Bootstrap5 表单</h1>
+    <p>Bootstrap5 提供了三种不同类型的表单布局：</p>
+    <ul>
+        <li>垂直表单（默认）</li>
+        <li>水平表单</li>
+        <li>内联表单</li>
+    </ul>
+    <h2 style="background-color: aquamarine;">创建垂直表单</h2>
+    <p>基本的表单结构是Bootstrap自带的，个别的表单控件自动接收一些全局样式。</p>
+    <p>把标签和控件放在一个带有 .form-group 类的 div 元素中，这是获取最佳间距所必须的。</p>
+    <p>label 元素添加了 .form-label 类以确保正确的填充。</p>
+    <p>向所有的文本输入元素 input、texttarea 添加 .form-control 类。 </p>
+    <form>
+        <div class="form-group">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" placeholder="Please input username">
+        </div>
+        <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="Please input password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <hr>
+    <h2 style="background-color: aquamarine;">创建内联表单</h2>
+    <p>表单元素并排显示，可以使用 .row 和 .col</p>
+    <form>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Please input username">
+            </div>
+            <div class="col">
+                <input type="password" class="form-control" placeholder="Please input password">
+            </div>
+        </div>
+    </form>
+    <hr>
+    <h2 style="background-color: aquamarine;">表单控件尺寸</h2>
+    <p>.form-control-lg 或 .form-control-sm 更改 .form-control 输入控件的大小。</p>
+    <input type="text" class="form-control form-control-lg" placeholder="大型输入控件">
+    <input type="text" class="form-control form-control-sm" placeholder="小型输入控件">
+    <hr>
+    <h2 style="background-color: aquamarine;">向表单控件添加帮助文本</h2>
+    <div class="row">
+        <div class="col-auto">
+            <label class="col-form-label-sm" for="inputpassword">Password</label>
+        </div>
+        <div class="col-auto">
+            <input type="password" id="inputpassword" class="form-control form-control-sm">
+        </div>
+        <div class="col-auto">
+            <span class="form-text">必须8-20个字符长度。</span>
+        </div>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">表单下拉列表</h2>
+    <p>将 .form-select 类添加到 select 元素。</p>
+    <select name="gender" id="gender" class="form-select">
+        <option value="male">男</option>
+        <option value="female">女</option>
+    </select>
+    <p>使用 .form-select-lg 或 .form-select-sm 改变下拉列表的大小。</p>
+    <select class="form-select form-select-lg">
+        <option value="male">男</option>
+        <option value="female">女</option>
+    </select>
+    <select class="form-select form-select-sm">
+        <option value="male">男</option>
+        <option value="female">女</option>
+    </select>
+    <p>添加 multiple 属性使下拉列表多选</p>
+    <select class="form-select form-select-sm" multiple>
+        <option>语文</option>
+        <option>数学</option>
+        <option>英语</option>
+    </select>
+    <hr>
+    <h1>复选框和单选框</h1>
+    <p>
+        复选框有不同的标记，它们被设置了 .form-check 类的容器元素包围。
+        label 设置 .form-check-label 类，而复选框和单选按钮使用 .form-check-input。
+        希望默认选中复选框，可以使用 checked 属性。
+    </p>
+    <h2 style="background-color: aquamarine;">复选框</h2>
+    <p>使用 .form-check 包装元素，来确保标签和复选框有合适的外边距。</p>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="english" checked>
+        <label for="english" class="form-check-label">英语</label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="math">
+        <label for="math" class="form-check-label">数学</label>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">单选框</h2>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" id="english-radio" checked>
+        <label for="english-radio" class="form-check-label">英语</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" id="math-radio">
+        <label for="math-radio" class="form-check-label">数学</label>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">拨动开关</h2>
+    <p>将 .form-check 和 .form-switch 类一起在容器中使用，可以将复选框设置为开关样式。</p>
+    <div class="form-check form-switch">
+        <input type="checkbox" class="form-check-input" checked>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">滑块</h2>
+    <p>.form-range 类添加到类型为 range 的 input 元素，可以设置范围菜单的样式。</p>
+    <div class="form-check">
+        <input type="range" class="form-range">
+    </div>
+    <hr>
+    <h1>表单组</h1>
+    <p>.input-group 类是一种容器，通过在输入字段的前面或后面添加图标、文本或作为“帮助文本“来增强输入。</p>
+    <p>.input-group-text 类指定帮助文本的样式。</p>
+    <div class="input-group">
+        <span class="input-group-text">用户名</span>
+        <input type="text" class="form-control" placeholder="用户名">
+    </div>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="请输入邮箱">
+        <span class="input-group-text">@qq.com</span>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">输入组大小</h2>
+    <p>.input-group-sm 类用于小型输入组，.input-group-lg 用于大型输入组。</p>
+    <div class="input-group input-group-sm">
+        <input type="text" class="form-control">
+    </div>
+    <div class="input-group input-group-lg">
+        <input type="text" class="form-control">
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">多个输入</h2>
+    <div class="input-group">
+        <span for="" class="input-group-text">姓名</span>
+        <input type="text" class="form-control" placeholder="姓">
+        <input type="text" class="form-control" placeholder="名">
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">带复选框和单选框的输入组</h2>
+    <div class="input-group">
+        <div class="input-group-text">
+            <input type="checkbox">
+        </div>
+        <input type="text" class="form-control" placeholder="这是内容">
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">带按钮的输入组</h2>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="搜索">
+        <button type="submit" class="btn btn-primary">搜索</button>
+    </div>
+    <hr>
+    <h2 style="background-color: aquamarine;">带下拉按钮的输入组</h2>
+    <div class="input-group">
+        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">下拉按钮</button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item">语文</li>
+            <li class="dropdown-item">数学</li>
+            <li class="dropdown-item">英语</li>
+        </ul>
+        <input type="text" class="form-control" placeholder="内容">
+    </div>
+    <hr>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

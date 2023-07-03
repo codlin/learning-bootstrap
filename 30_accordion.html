@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap5 手风琴</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1 class="h1">Bootstrap5 手风琴</h1>
+    <p>主要作用时管理少量区域内的大量内容和导航列表。使用折叠插件，可以创建手风琴来显示和隐藏内容，而无需编写JS代码。</p>
+    <p>.accordion 类作为父容器，包含条目 .accordion-item。</p>
+    <div class="accordion" id="myAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne">视频一</button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p>第一集</p>
+                    <p>第二集</p>
+                    <p>第三集</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo">视频二</button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p>第一集</p>
+                    <p>第二集</p>
+                    <p>第三集</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree">视频一</button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p>第一集</p>
+                    <p>第二集</p>
+                    <p>第三集</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <b></b>
+    <p>注意上面的手风琴的 HTML 代码，button 元素应用的 .collaspe<b>d</b> css 类代表的是按钮的图标，而其余的 collapse 是折叠插件的 css 类。</p>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
